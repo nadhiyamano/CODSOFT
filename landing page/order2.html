@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <link rel="stylesheet" href="sample1.css">
+</head>
+<body>
+    <header>
+        <h1>Order Now</h1>
+    </header>
+    <main>
+        <div class="product">
+            <img src="bfc.jpg" alt="Product Image">
+            <h2>Black Forest Cake</h2>
+            <p>Description:Decadent layers of chocolate sponge, cherries, and cream.</p>
+            <p>Price: $20</p>
+            <form action="checkout.php" method="POST">
+                <input type="hidden" name="product_id" value="1">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                <button type="submit">Order Now</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bakery Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
