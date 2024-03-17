@@ -1,0 +1,90 @@
+body {
+    font-family: "Dancing Script" , cursive;
+    background-color: #f5f5f5;
+    background-image: url('https://media.istockphoto.com/id/1419065993/photo/wooden-toy-blocks-school-supplies-math-fractions-pencils-numbers-on-beige-background-back-to.webp?b=1&s=170667a&w=0&k=20&c=jtzNSW2AxCUPzXeSi4G6p7jayfOlWe8jn_wh5JNT8j0=');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  h1{
+   position: absolute;top: 20px;
+   color:#590329;
+   font-size: 50px;
+  }
+
+  #calculator {
+    background-color: #590329;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px; 
+  }
+
+  #display {
+    background-color: #555;
+    color: white;
+    font-size: 2.5em; 
+    padding: 15px;
+    text-align: right;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px; 
+  }
+
+  button {
+    padding: 20px; 
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #d64394;
+  }
+
+  button:active {
+    transform: translateY(2px);
+  }
+
+  button.operator {
+    background-color: #14aad3;
+    color: white;
+  }
+
+  button.operator:hover {
+    background-color: #341bb0;
+  }
+
+  button.clear {
+    background-color:darkviolet;
+    color: white;
+  }
+
+  button.clear:hover {
+    background-color: violet;
+  }
+
+  button.equal {
+    background-color: #2b9a8a;
+    color: white;
+  }
+
+  button.equal:hover {
+    background-color: #66e1db;
+  }
